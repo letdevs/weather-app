@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="weather">
+        <div class="weather__upper">
+            <div class="weather__upper-location">
+                <h1 class="weather__upper-timezone">TimeZone</h1>
+            </div>
+            <canvas class="icon"></canvas>
+            <div class="weather__upper-temperature">
+                <div class="weather__upper-section">
+                    <h2 class="weather__upper-degree">34</h2>
+                    <span>°C</span>
+                </div>
+                <div class="weather__upper-description"></div>
+            </div>
+        </div>
+        <div class="weather__lower">
+            <div class="weather__lower-day">
+                <div class="day">Monday</div>
+                <canvas class="iconM"></canvas>
+                <div class="temp"></div>
+            </div>
+            <div class="weather__lower-day">
+                <div class="day">Tuesday</div>
+                <canvas class="iconT"></canvas>
+                <div class="temp"></div>
+            </div>
+
+            <div class="weather__lower-day">
+                <div class="day">Wednesday</div>
+                <canvas class="iconW"></canvas>
+                <div class="temp"></div>
+            </div>
+
+            <div class="weather__lower-day">
+                <div class="day">Thursday</div>
+                <canvas class="iconTH"></canvas>
+                <div class="temp"></div>
+            </div>
+
+        </div>
+
+        <script src="skycons.js"></script>
+        <script src="weather.js"></script>
+    </div>
+    <select class="geoloc">
+        <option value="Spain">Spain</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Norway">Norway</option>
+        <option value="Austria">Austria</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="Germany">Germany</option>
+    </select>
+</body>
+
+</html>
